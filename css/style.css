@@ -9787,3 +9787,44 @@ a.text-dark:hover, a.text-dark:focus {
   place-items: center;
   padding: 1px;
 }
+.ventana{
+  background-color:#C79098;
+  background-position: absolute;
+  width: 15%;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 33px;
+  min-height: 200px;
+  border-radius: 22px;
+  border-color: #e83e8c;
+  position: absolute;
+  top:3300px;
+  outline: auto;
+  display: none;
+  
+}
+.ventana{
+  animation: ease-in-out aparecer 2s;
+}
+@keyframes aparecer{
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  85%{
+    transform: scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+#cerrar{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
