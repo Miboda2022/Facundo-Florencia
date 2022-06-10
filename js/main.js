@@ -122,7 +122,7 @@ $seconds = document.getElementById('seconds'),
 $finalMessage = document.querySelector('.final-sms');
 
 //Fecha a futuro
-const countdownDate = new Date('07 16, 2022 10:59:00').getTime();
+const countdownDate = new Date('07 16, 2022 00:00:00').getTime();
 
 let interval = setInterval(function(){
     //Obtener fecha actual y milisegundos
@@ -149,4 +149,12 @@ let interval = setInterval(function(){
         $finalMessage.style.transform = 'translateY(0)';
     }
 }, 1000);
+
+function abrir(){
+    document.getElementById("vent").style.display="block";
+}
+
+function cerrar(){
+    document.getElementById("vent").style.display="none";
+}
 
